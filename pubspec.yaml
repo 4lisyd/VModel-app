@@ -1,0 +1,126 @@
+name: vmodel
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  desktop_window: ^0.4.0
+  get: ^4.6.5
+  pin_code_fields: ^7.4.0
+  scroll_date_picker: ^3.6.0
+  date_field: ^3.0.1
+  intl_phone_field: ^3.1.0
+  badges: ^2.0.3
+  # to erase the flutter native white splash screen and give the app a native splash
+  flutter_native_splash: ^2.2.5
+  # # used in getting the screen sized specufic to the device
+  # flutter_screenutil: ^5.5.3+2
+  #Used to import and display svg in your flutter app
+  flutter_svg: ^1.1.5
+  #package used to get date with a custom UI used in shared/vmodel_date_picker
+  syncfusion_flutter_datepicker: ^20.3.50
+  #used to format date time and some localizations
+  intl: 
+  sizer: ^2.0.15
+  flutter_rating_bar: ^4.0.1
+  scroll_bottom_navigation_bar: ^4.0.0
+  carousel_slider: ^4.1.1
+  image_picker: ^0.8.6
+  flutter_riverpod: ^2.0.2
+  mask_text_input_formatter: ^2.4.0
+  google_maps_flutter: ^2.2.1
+  loop_page_view: ^1.2.0
+  video_player: ^2.4.7
+  readmore: ^2.2.0
+  switcher: ^1.0.0
+  flutter_switch: ^0.3.2
+  # for sharing file in flutter
+  share_plus: ^6.3.0
+  url_launcher: ^6.1.7
+  country_list: ^0.0.5
+  camera: ^0.10.0+4
+  flutter_secure_storage: ^5.0.2
+  shared_preferences: ^2.0.15
+  table_calendar: ^3.0.8
+  auto_size_text: ^3.0.0
+  fluttertoast: ^8.1.2
+  custom_refresh_indicator: ^2.0.1
+  progress_indicators: ^1.0.0
+  shimmer: ^2.0.0
+  timelines: ^0.1.0
+  flutter_html:
+  graphql_flutter:
+  http:
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  path: ../..
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logos/
+    - assets/images/
+    - assets/images/doc/
+    - assets/
+    - assets/icons/
+    - assets/images/models/
+    - assets/images/feed_models/
+    - assets/images/portfolio_images/
+    - assets/images/polaroid_images/
+    - assets/images/backgrounds/
+    - assets/images/photographers/
+    - assets/images/pets/
+    - assets/images/doc/
+    - assets/images/trendMagazines/
+    - assets/images/jobs_market_images/
+    - assets/images/review_images/
+    - assets/images/create_booking_images/
+    - assets/videos/
+    - assets/images/business/
+
+  fonts:
+    - family: Avenir
+      fonts:
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-Regular.otf
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-It.otf
+          style: italic
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-BoldCn.otf
+          weight: 600
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-Demi.otf
+          weight: 500
+        - asset: assets/fonts/Avenir/AvenirNextLTPro-DemiCn.otf
+          weight: 400
+    - family: Futura
+      fonts:
+        - asset: assets/fonts/futura/Futura-CondensedLight.otf
+        - asset: assets/fonts/futura/Futura_Book_Italic.ttf
+          style: italic
+        - asset: assets/fonts/futura/Futura_Bold.ttf
+          weight: 700
+        - asset: assets/fonts/futura/Futura_Heavy.ttf
+          weight: 600
+        - asset: assets/fonts/futura/futura_medium_bt.ttf
+          weight: 500
+        - asset: assets/fonts/futura/Futura_Light.ttf
+          weight: 400
+        - asset: assets/fonts/futura/unicode.futurab.ttf
+          weight: 300
+        

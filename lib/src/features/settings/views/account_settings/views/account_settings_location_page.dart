@@ -1,0 +1,60 @@
+import 'package:vmodel/src/res/res.dart';
+import 'package:vmodel/src/shared/appbar/appbar.dart';
+import 'package:vmodel/src/shared/buttons/primary_button.dart';
+import 'package:vmodel/src/shared/buttons/text_button.dart';
+import 'package:vmodel/src/shared/text_fields/primary_text_field.dart';
+import 'package:vmodel/src/vmodel.dart';
+
+class AccountSettingsLocationPage extends StatelessWidget {
+  const AccountSettingsLocationPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: VWidgetsAppBar(
+        leadingIcon: const VWidgetsBackButton(),
+        appbarTitle: "Location",
+        trailingIcon: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 12, 6, 0),
+            child: VWidgetsTextButton(
+              text: "Done",
+              onPressed: () {
+                 popSheet(context);
+              },
+            ),
+          ),
+        ],
+      ),
+      body: Padding(
+        padding: const VWidgetsPagePadding.horizontalSymmetric(18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            addVerticalSpacing(25),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: const [
+                  VWidgetsPrimaryTextFieldWithTitle(
+                    label: "Location",
+                    hintText: "Location",
+                  ),
+                ],
+              ),
+            )),
+            addVerticalSpacing(12),
+            VWidgetsPrimaryButton(
+              buttonTitle: "Done",
+              onPressed: () {
+                 popSheet(context);
+              },
+              enableButton: true,
+            ),
+            addVerticalSpacing(40),
+          ],
+        ),
+      ),
+    );
+  }
+}

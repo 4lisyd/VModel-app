@@ -1,0 +1,5 @@
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/logos/vmodel_logo.png"
+  image_path_ios: "assets/logos/vmodel_logo.png"
